@@ -14,7 +14,7 @@ function App() {
     <div className='container-xxl'>
       <Navbar />
       <Routes>
-        <Route path="/cocktails-react" element={<Home />}></Route>
+        <Route path="cocktails-react/home" element={<Home />}></Route>
         <Route path="cocktails-react/search" element={<Search />}></Route>
         <Route path="cocktails-react/filter" element={<Filter />}></Route>
         <Route path="cocktails-react/cocktail/:id" element={<ViewCocktail />}></Route>

@@ -19,7 +19,7 @@ function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand navbar-light  sticky-top">
-                <a className="navbar-brand  text-white ms-4" href="/cocktails-react">Home <LocalBarIcon /> </a>
+                <a className="navbar-brand  text-white ms-4" href="/cocktails-react/home">Home <LocalBarIcon /> </a>
                 <div className="row justify-content-between ms-5 w-100" >
                     <div className="col-md-6 col-sm-12">                    
                         <form className="d-inline-flex m-1 ">
