@@ -1,0 +1,89 @@
+h1{
+  color: rgb(175, 43, 43);
+  font-family: 'Amatic SC', sans-serif;
+  font-size:5rem;
+
+}
+
+nav {
+  background-color: rgb(77, 18, 18);
+ 
+}
+
+h4 {
+  color: rgb(175, 43, 43);
+}
+
+body {
+  font-family: 'Caveat', cursive;
+font-family: 'Libre Baskerville', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-coctail {
+  margin-bottom: 50px;
+
+}
+.left {
+  float: left;
+  width: 50%;
+}
+
+img {
+  width: 90%;
+  height: auto;
+}
+
+.right {
+  float: right;
+  width: 50%;
+}
+
+.instruction-card {
+  float: left;
+}
+
+ul {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.coct-title {
+  color: rgb(175, 43, 43);
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 3rem;
+}
+
+.navbar-dark {
+ --bs-navbar-color: rgb(250, 216, 114);
+ --bs-navbar-hover-color: rgb(255, 193, 7);
+ --bs-navbar-active-color: rgb(255, 193, 7);
+}
+
+.text-brand {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.drop-menu {
+  background-color: rgb(95, 37, 37);
+  border: none;
+}
+
+
+.drop-menu li :hover {
+  color:  rgb(255, 193, 7);
+
+}
+.drop-menu li :active {
+  background-color: rgb(85, 25, 25);
+}
+
+
