@@ -18,7 +18,7 @@ function Navbar() {
                 <div className="container-fluid">
                     <a href="/cocktails-react" className="navbar-brand text-warning text-brand ms-4 h-100">Home <LocalBarIcon /></a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <SearchIcon />
                     </button>
                     <div className="collapse navbar-collapse" id="navbarScroll">
                         <ul className="navbar-nav me-auto  my-lg-0 navbar-nav-scroll text-center" style={{scrollHeight: '100px'}}>                          

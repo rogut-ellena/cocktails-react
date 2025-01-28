@@ -1,10 +1,10 @@
 import React from "react";
 import FilterByAlc from "../components/FilterByAlc";
 
-function Filter() {
+function Filter({ handleFilter }) {
     return (
         <div>
-            <FilterByAlc />
+            <FilterByAlc handleFilter={ handleFilter } />
         </div>
     );
 }

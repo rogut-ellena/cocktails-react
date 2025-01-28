@@ -1,8 +1,10 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
 import Recipe from "./Recipe";
+import { Link } from "react-router";
 
-function Cocktail({id}) {
+function Cocktail({id, filter }) {
+    //console.log(filter);
     
     let recipe = [];
     const [cocktail, setCocktail] = useState({
@@ -62,7 +64,11 @@ function Cocktail({id}) {
     }
 
     return (
-        <div className="container row border border-white card-cocktail p-4">   
+        <div className="container row border border-white card-cocktail p-4"> 
+        <Link to={"/filter/" + filter}>
+         <h3>{filter ? "Back to: " + filter.replace("_", " ") + " Cocktails" : ""}</h3>  
+        </Link>
+       
 
             <div className="col-lg-6 d-flex justify-content-center align-items-center p-2">
                 <img 

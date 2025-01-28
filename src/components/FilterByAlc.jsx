@@ -5,7 +5,7 @@ import axios from "axios";
 import { Link } from "react-router"
 
 
-function FilterByAlc() {
+function FilterByAlc({ handleFilter }) {
 
     const {alc} = useParams();
     const [cocktails, setCocktails] = useState([]);
@@ -29,15 +29,15 @@ function FilterByAlc() {
             <div className="row .container-fluid">
                 {cocktails.map((cocktail) => ( 
                     
-                    <div className="col-lg-4 col-md-6 col-xxl-3 text-center my-5" key={cocktail.idDrink}>
-                        <Link to={"/cocktail/" + cocktail.idDrink}>
-                        <img src={cocktail.strDrinkThumb} className="rounded-circle" alt={cocktail.strDrink} />
-                        <div className="card-body ">
-                            <h4 className="card-title my-2 coct-title">
-                                {cocktail.strDrink}
-                            </h4>
-                          
-                        </div>
+                    <div className="col-lg-4 col-md-6 col-xxl-3 text-center my-5" key={cocktail.idDrink} value={alc}>
+                        <Link to={"/cocktail/" + cocktail.idDrink} onClick={handleFilter(alc)}>
+                            <img src={cocktail.strDrinkThumb} className="rounded-circle" alt={cocktail.strDrink} />
+                            <div className="card-body ">
+                                <h4 className="card-title my-2 coct-title">
+                                    {cocktail.strDrink}
+                                </h4>
+                            
+                            </div>
                         </Link> 
                     </div>
                     

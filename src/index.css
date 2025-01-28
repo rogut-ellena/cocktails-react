@@ -14,9 +14,15 @@ h4 {
   color: rgb(175, 43, 43);
 }
 
+h3 {
+  color:rgb(175, 43, 43);
+  text-decoration: underline;
+
+}
+
 body {
   font-family: 'Caveat', cursive;
-font-family: 'Libre Baskerville', serif;
+  font-family: 'Libre Baskerville', serif;
 }
 
 a {
@@ -75,6 +81,10 @@ p {
 .drop-menu {
   background-color: rgb(95, 37, 37);
   border: none;
+}
+
+.drop-menu :active {
+  color:  rgb(255, 193, 7);
 }
 
 
