@@ -29,11 +29,11 @@ function FilterByAlc({ handleFilter }) {
             <div className="row .container-fluid">
                 {cocktails.map((cocktail) => ( 
                     
-                    <div className="col-lg-4 col-md-6 col-xxl-3 text-center my-5" key={cocktail.idDrink} value={alc}>
-                        <Link to={"/cocktail/" + cocktail.idDrink} onClick={handleFilter(alc)}>
-                            <img src={cocktail.strDrinkThumb} className="rounded-circle" alt={cocktail.strDrink} />
+                    <div className="col-lg-4 col-md-6 col-xxl-3 text-center my-5" key={cocktail.idDrink} >
+                        <Link to={"/cocktail/" + cocktail.idDrink} onClick={handleFilter} >
+                            <img src={cocktail.strDrinkThumb} className="rounded-circle" alt={cocktail.strDrink} value={alc}/>
                             <div className="card-body ">
-                                <h4 className="card-title my-2 coct-title">
+                                <h4 className="card-title my-2 coct-title" value={alc}>
                                     {cocktail.strDrink}
                                 </h4>
                             

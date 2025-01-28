@@ -22,7 +22,7 @@ function Navbar() {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarScroll">
                         <ul className="navbar-nav me-auto  my-lg-0 navbar-nav-scroll text-center" style={{scrollHeight: '100px'}}>                          
-                            <li className="nav-item dropdown mx-5">                        
+                            <li className="nav-item dropdown mx-4">                        
                                 <button type="button" className="btn nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                                     Filter by Alcoholic
                                 </button>

@@ -10,13 +10,13 @@ import {
 } from "react-router";
 
 function App() {
-  const [filter, setFilter] = useState(null);
-  function handleFilter(alc) {
-    setFilter(alc);
+  const [filter, setFilter] = useState(null );
+  function handleFilter(e) {
+    setFilter(e.target.getAttribute("value"));
   }
 
   return (
-    <div className='container-lg'>
+    <div className='container'>
       <Navbar />
       <Routes>
         <Route path="/cocktails-react/" element={<Home />}></Route>
